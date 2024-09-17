@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4a54f1, #24c6dc);
+    margin: 0;
+    padding: 0;
+    color: #333;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  to {
-    transform: rotate(360deg);
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
   }
-}
+  
+  h1 {
+    color: #fff;
+    font-size: 2.5em;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #4a54f1;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  nav a:hover {
+    background: #354c9c;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #4a54f1;
+    border-bottom: 2px solid #4a54f1;
+    padding-bottom: 10px;
+  }
+  
+  form {
+    background: #f7f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  input[type="number"], input[type="password"], input[type="checkbox"], button {
+    margin-top: 5px;
+  }
+  
+  input[type="number"], input[type="password"], input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    background: #4a54f1;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #354c9c;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  #generatedPassword, #modifiedPassword {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .strength-container {
+    margin-top: 20px;
+  }
+  
+  #password-strength, #password-criteria {
+    font-size: 1.1em;
+    margin: 5px 0;
+  }
+  
+  .good {
+    color: #4CAF50;
+  }
+  
+  .moderate {
+    color: #FFC107;
+  }
+  
+  .weak {
+    color: #FF5252;
+  }
+  
